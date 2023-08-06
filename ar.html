@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- style css ar -->
+    <link rel="stylesheet" href="./css/style_ar.css" />
+
+    <title>البسمة</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-heart"></i>
+          <span class="text-uppercase fw-bold">عيادة البسمة</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2 text-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#header"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">الخدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#doctors">اطبائنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#newsletter">تواصل معنا</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa fa-language"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item disabled" href="ar.html">العربية</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="index.html">الانجليزية</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="btn btn-outline-light d-lg-none mt-2 rounded-pill">
+                لنتحدث معا
+              </button>
+            </li>
+          </ul>
+          <button
+            class="btn btn-outline-light px-3 d-none d-lg-block rounded-pill"
+          >
+            لنتحدث معا
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header id="header" class="min-vh-100 pt-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-white">
+          <div class="col-8 col-lg-6 pt-5 pt-lg-0 text-center text-lg-start">
+            <h1 class="text-capitalize">
+              توفير وصول المجتمع إلى الرعاية الصحية الجيدة
+            </h1>
+            <p class="fw-light py-2">
+              جودة خدماتنا والكفاءة المهنية لموظفينا هي سبب الثقة في نجاح مركز
+              الحياة.
+            </p>
+            <button
+              class="btn btn-light border-primary rounded-pill btn-lg text-primary fw-bold"
+            >
+              ابدأ الان
+            </button>
+          </div>
+          <div class="col-8 col-lg-6 ps-lg-5 py-3">
+            <img src="./imgs/header_img.png" class="w-100" alt="header" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- services -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="row py-5 g-4">
+          <div class="col col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card service_card border-0 text-center px-1 pb-4 pt-5">
+              <div class="card-img">
+                <i class="fa fa-heart service_icon fs-1 text-light"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">طب القلب</h5>
+                <p class="card-text">
+                  تشخيص وعلاج الأمراض المرتبطة بالقلب والحالات القلبية الوعائية.
+                </p>
+                <a href="#home" class="btn rounded-pill text-primary fw-bold"
+                  >اقرأ المزيد <i class="fa fa-arrow-left ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card service_card border-0 text-center px-1 pb-4 pt-5">
+              <div class="card-img">
+                <i class="fa fa-bone service_icon fs-1 text-light"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">جراحة العظام</h5>
+                <p class="card-text">
+                  التعامل مع الإصابات العضلية الهيكلية ، بما في ذلك العظام
+                  والمفاصل.
+                </p>
+                <a href="#home" class="btn rounded-pill text-primary fw-bold"
+                  >اقرأ المزيد <i class="fa fa-arrow-left ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card service_card border-0 text-center px-1 pb-4 pt-5">
+              <div class="card-img">
+                <i class="fa fa-baby service_icon fs-1 text-light"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">طب الأطفال</h5>
+                <p class="card-text">
+                  تركز على الرعاية الصحية والطبية للرضع والأطفال والمراهقين.
+                </p>
+                <a href="#home" class="btn rounded-pill text-primary fw-bold"
+                  >اقرأ المزيد <i class="fa fa-arrow-left ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card service_card border-0 text-center px-1 pb-4 pt-5">
+              <div class="card-img">
+                <i class="fa-solid fa-syringe service_icon fs-1 text-light"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">طب الروماتيزم</h5>
+                <p class="card-text">
+                  تشخيص وعلاج أمراض المناعة الذاتية والاضطرابات التي تؤثر على
+                  المفاصل.
+                </p>
+                <a href="#home" class="btn rounded-pill text-primary fw-bold"
+                  >اقرأ المزيد <i class="fa fa-arrow-left ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us -->
+    <section id="about" class="py-5 my-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6 pe-0 pe-lg-5">
+            <img
+              class="w-100 about_img"
+              src="./imgs/about.jpg"
+              alt="about us"
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2 class="text-capitalize fw-bold fs-1 mb-4">
+              قصة قصيرة عن استحقاقنا الطبي
+            </h2>
+            <p>
+              مرحبا بكم في
+              <span class="text-primary fw-bold">عيادة البسمة</span>! في عيادتنا
+              الحديثة ، نحن ملتزمون بتقديم خدمات رعاية صحية من الدرجة الأولى
+              للأفراد من جميع الأعمار. يلتزم فريق الأطباء والممرضات وموظفي الدعم
+              ذوي الخبرة لدينا برفاهيتك.
+            </p>
+            <p>
+              نسعى جاهدين لتقديم رعاية طبية استثنائية ، وجعل صحتك أولويتنا. ثق
+              بنا لنكون شريكك في رحلتك نحو حياة أكثر صحة وسعادة
+            </p>
+            <div class="row my-4">
+              <div class="col">
+                <div class="number text-primary fs-2 fw-bold">1200+</div>
+                <p>تشخيص دقيق</p>
+              </div>
+              <div class="col">
+                <div class="number text-primary fs-2 fw-bold">400+</div>
+                <p>علاج احترافي</p>
+              </div>
+              <div class="col">
+                <div class="number text-primary fs-2 fw-bold">170+</div>
+                <p>رعاية شخصية</p>
+              </div>
+              <div class="col">
+                <div class="number text-primary fs-2 fw-bold">260+</div>
+                <p>عملية جراحية</p>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-lg rounded-pill fw-bold">
+              تعلم المزيد
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- surgery -->
+    <section id="surgery" class="py-5">
+      <div class="container">
+        <h2 class="text-capitalize fw-bold fs-1 mb-5 text-center">
+          أفضل جراحة أجريناها للمريض
+        </h2>
+        <div class="d-xl-flex gap-5 p-4 mb-4 rounded-3 bg-secondary text-light">
+          <div class="col mb-md-0 mb-5">
+            <div class="row gy-4 align-items-center">
+              <div class="col-12 col-sm-6">
+                <img
+                  class="img-fluid rounded-3"
+                  src="./imgs/surgery_1.jpg"
+                  alt="surgery_1"
+                />
+              </div>
+              <div class="col-12 col-sm-6">
+                <h3>الدقة الجراحية: احتضان التحول وتجديد الحياة.</h3>
+                <p class="fw-light py-0 py-md-3">
+                  تحتضن التحول بدقة جراحية. فريقنا الماهر ملتزم بإعادة الأمل،
+                  وتجديد الحياة، وصياغة مستقبل أكثر صحة
+                </p>
+                <img src="./imgs/ecg.svg" alt="ecg" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row gy-4 align-items-center">
+              <div class="col-12 col-sm-6 order-0 order-sm-2 order-xl-0">
+                <img
+                  class="img-fluid rounded-3"
+                  src="./imgs/surgery_2.jpg"
+                  alt="surgery_1"
+                />
+              </div>
+              <div class="col-12 col-sm-6">
+                <h3>الجراحة الرحيمة: تشكيل الأمل والشفاء بلا حدود</h3>
+                <p class="fw-light py-0 py-md-3">
+                  في مجال الجراحة ، يلتقي الابتكار مع الرحمة. ثق بخبرائنا لرسم
+                  طريق نحو التعافي ، حيث لا يعرف الشفاء حدودًا .
+                </p>
+                <img src="./imgs/ecg2.svg" alt="ecg" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- doctors -->
+    <section id="doctors" class="py-5">
+      <div class="container">
+        <h2 class="text-capitalize fw-bold fs-1 text-center">
+          أطباؤنا المخلصون
+        </h2>
+        <div class="row py-5 g-4">
+          <div class="col col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card shadow rounded-3 p-3">
+              <div class="card-img">
+                <img
+                  src="./imgs/doctor_1.png"
+                  alt="doc_1"
+                  class="img-thumbnail border-0"
+                />
+              </div>
+              <div class="card-body px-1">
+                <h5 class="card-title fs-4">دكتور أحمد الصديق</h5>
+                <p class="card-text">اختصاص جراحة العظام</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card shadow rounded-3 p-3">
+              <div class="card-img">
+                <img
+                  src="./imgs/doctor_2.png"
+                  alt="doc_1"
+                  class="img-thumbnail border-0"
+                />
+              </div>
+              <div class="card-body px-1">
+                <h5 class="card-title fs-4">دكتورة ليلى الحسيني</h5>
+                <p class="card-text">اختصاص طب الأطفال</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card shadow rounded-3 p-3">
+              <div class="card-img">
+                <img
+                  src="./imgs/doctor_3.png"
+                  alt="doc_1"
+                  class="img-thumbnail border-0"
+                />
+              </div>
+              <div class="card-body px-1">
+                <h5 class="card-title fs-4">دكتور محمد العبدلي</h5>
+                <p class="card-text">اختصاص طب الجلد</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card shadow rounded-3 p-3">
+              <div class="card-img">
+                <img
+                  src="./imgs/doctor_4.png"
+                  alt="doc_1"
+                  class="img-thumbnail border-0"
+                />
+              </div>
+              <div class="card-body px-1">
+                <h5 class="card-title fs-4">دكتورة ياسمين الجميل</h5>
+                <p class="card-text">ختصاص طب العيون</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonials" class="pb-5">
+      <div class="container">
+        <h2 class="text-capitalize fw-bold fs-1 text-center mb-5">
+          ما يقوله عملائنا عنا
+        </h2>
+        <div class="d-flex flex-column flex-lg-row gap-4 px-4">
+          <div class="test_box col bg-light p-4 rounded-3 border">
+            <p class="say mb-4">
+              لقد كنت مريضًا في مركز بسمة للعناية الطبية لسنوات، ولقد قدموا
+              باستمرار رعاية استثنائية. الأطباء ملموسون ورحباء والموظفون ودودون
+              ومتفانون في الاهتمام.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex gap-2 align-items-end">
+                <div class="img_test overflow-hidden rounded-circle">
+                  <img
+                    src="./imgs/man_1.jpg"
+                    alt="testimonials"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="info">
+                  <h5 class="fw-bold text-capitalize">محمد سعيد</h5>
+                  <p>محامي</p>
+                </div>
+              </div>
+              <i class="fa fa-quote-left fs-1 text-primary"></i>
+            </div>
+          </div>
+          <div class="test_box col bg-light p-4 rounded-3 border">
+            <p class="say mb-4">
+              النهج الشخصي لمشاكل صحتي جعلني أشعر حقًا بالرعاية. أشعر دائمًا
+              بأنني مسموع ومحترم كمريض. شكرًا لكم، مركز بسمة، على جعل رحلتي
+              الصحية إيجابية جدًا!
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex gap-2 align-items-end">
+                <div class="img_test overflow-hidden rounded-circle">
+                  <img
+                    src="./imgs/man_2.jpg"
+                    alt="testimonials"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="info">
+                  <h5 class="fw-bold text-capitalize">عمر سعدان</h5>
+                  <p>مهندس</p>
+                </div>
+              </div>
+              <i class="fa fa-quote-left fs-1 text-primary"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter -->
+    <section id="newsletter" class="py-5">
+      <div class="container">
+        <div class="text-center text-light bg-primary rounded-3 p-5">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2 class="text-capitalize fw-bold fs-1 text-center">
+              اشترك في النشرة الإخبارية
+            </h2>
+            <p class="fw-light mb-4">
+              ابق على اطلاع. اشترك الآن للحصول على التحديثات الحصرية والعروض
+              ونصائح الصحة
+            </p>
+            <div class="input-group position-relative">
+              <input
+                type="email"
+                placeholder="بريدك الالكتروني"
+                class="form-control p-4 rounded-pill"
+              />
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill position-absolute py-3 px-4 me-2"
+              >
+                اشتراك
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pt-5 bg-secondary text-light">
+      <div class="container">
+        <div class="row gy-4 gx-4">
+          <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+            <a class="navbar-brand text-light mx-0" href="#">
+              <i class="fa-solid fa-heart"></i>
+              <span class="text-uppercase fw-bold">عيادة البسمة</span>
+            </a>
+            <p class="fw-light mt-2 mb-4 footer_desc">
+              الرعاية الرحيمة والأطباء المهرة والمرافق المتطورة. صحتك هي
+              أولويتنا. الشراكة من أجل العافية.
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <h5 class="footer_title">تصفح الموقع</h5>
+            <ul class="footer_links">
+              <li><a href="#header">الرئيسية</a></li>
+              <li><a href="#about">من نحن</a></li>
+              <li><a href="#services">الخدمات</a></li>
+              <li><a href="#newsletter">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <h5 class="footer_title">روابط اضافية</h5>
+            <ul class="footer_links">
+              <li><a href="#doctors">اطبائنا</a></li>
+              <li><a href="#testimonials">اراء المرضى</a></li>
+              <li><a href="#">مدونة</a></li>
+              <li><a href="#">وظائف</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <h5 class="footer_title">مواقع التواصل</h5>
+            <p class="fw-light">
+              تابعنا على وسائل التواصل الاجتماعي للبقاء على اتصال.
+            </p>
+            <div class="social">
+              <i class="me-2 fa-brands fa-facebook"></i>
+              <i class="me-2 fa-brands fa-twitter"></i>
+              <i class="me-2 fa-brands fa-instagram"></i>
+              <i class="me-2 fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4" />
+        <p class="text-center pb-4 m-0">
+          &copy; 2023 عياده البسمة جميع الحقوق محفوظة
+        </p>
+      </div>
+    </footer>
+
+    <!-- Popper and Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

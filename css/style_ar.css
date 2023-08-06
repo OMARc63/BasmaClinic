@@ -1,0 +1,13 @@
+body {
+  font-family: "Almarai", sans-serif !important;
+}
+#header {
+  background: url("../imgs/header_rtl.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  #header {
+    background-color: var(--main-color);
+  }
+}

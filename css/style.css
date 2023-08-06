@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+  --main-color: #1480ec;
+  --sec-color: #2e3868;
+}
+
+body {
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* global */
+.bg-primary {
+  background: var(--main-color) !important;
+}
+.text-primary {
+  color: var(--main-color) !important;
+}
+.bg-secondary {
+  background-color: var(--sec-color) !important;
+}
+.btn-lg {
+  padding: 15px 30px !important;
+}
+.card {
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.card-img {
+  overflow: hidden;
+}
+.card-img img {
+  transition: all 0.3s ease;
+}
+.card:hover .card-img img {
+  transform: scale(1.1);
+}
+
+/* navbar */
+.nav-link:hover {
+  color: white !important;
+}
+
+/* header */
+#header {
+  background: url("../imgs/header.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    background-color: var(--main-color);
+  }
+}
+
+/* services */
+#services .card-img {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #7bc4e6;
+  margin: 0 auto 0.4rem;
+}
+.service_card:hover a.btn {
+  color: white !important;
+}
+
+/* About us */
+.about_img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* surgery */
+#surgery {
+  background-color: #eef1ff;
+}
+
+/* testimonials */
+.img_test img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.test_box {
+  transition: all 0.3s ease;
+}
+.test_box:hover {
+  border-color: var(--main-color) !important;
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+/* newsletter */
+#newsletter {
+  background: linear-gradient(180deg, transparent 50%, var(--sec-color) 50%);
+}
+#newsletter p {
+  max-width: 45ch;
+  margin: 0 auto;
+}
+#newsletter .input-group {
+  max-width: 500px;
+}
+#newsletter .btn {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+/* footer */
+footer p {
+  color: #ddd;
+}
+.footer_desc {
+  max-width: 60ch;
+}
+.footer_links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer_links a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: lighter;
+  transition: all 0.3s ease;
+}
+.footer_links a:hover {
+  color: var(--main-color);
+}
+.social i {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.social i:hover {
+  color: var(--main-color);
+}
+.footer_title {
+  margin-bottom: 0.75rem;
+}
