@@ -51,6 +51,9 @@ body {
 }
 
 /* navbar */
+.navbar {
+  width: 100vw;
+}
 .nav-link:hover {
   color: white !important;
 }
